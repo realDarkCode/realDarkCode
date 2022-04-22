@@ -18,7 +18,7 @@
 
 - 🌱 I’m currently learning **Advance JavaScript ecosystem**
 
-- 🎉 I’m excited to finish [personal portfolio](https://github.com/realDarkCode/portfolio)
+- 🎉 I’m excited to finish [personal portfolio](https://github.com/realDarkCode/realDarkcode.github.io)
 
 - 👨‍💻 All of my projects are available at [https://darkcode.codes](https://darkcode.codes)
 
