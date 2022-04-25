@@ -46,3 +46,4 @@
 <!-- Top Languages -->
 <p align="Center"><a href="https://github.com/anuraghazra/github-readme-stats" > 
 <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=realDarkCode&langs_count=8&layout=compact" alt="Top Langs"  title="DarkCode's Top Langs"/> </a></p>
+<p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=realdarkcode&" alt="realdarkcode" /></p>
