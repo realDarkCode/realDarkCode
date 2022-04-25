@@ -36,7 +36,7 @@
   </p>
   <!-- wakatime Stats -->
   <p align="center"><a href="https://github.com/anuraghazra/github-readme-stats" > 
-  <img align="center" src="https://github-readme-stats.vercel.app/api/wakatime?username=realDarkCode" alt="DarkCodes's wakatime stats"  title="DarkCode's wakatime stats"/> </a></p>
+  <img align="center" src="https://github-readme-stats.vercel.app/api/wakatime?username=realDarkCode&layout=compact" alt="DarkCodes's wakatime stats"  title="DarkCode's wakatime stats"/> </a></p>
   <p align='center'><a href="https://github.com/anuraghazra/github-readme-stats" > 
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=realdarkcode&hide=stars&count_private=true&theme=vue&border_radius=10" alt="DarkCode's stats" title="DarkCode's stats"/> </a></p>
 
