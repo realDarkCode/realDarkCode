@@ -19,19 +19,28 @@
 <p>I'm a student & self-taught Web Developer from Bangladesh. I wrote my first line of code when I was in 6th grade and since then, I have started learned so many things still walking the walk. you can  checkout my website for more details: https://realdarkcode.github.io</p>
 
 <!-- Contacts -->
-<h2 align="left">Connect with me:</h2>
-<p align="left">
-<a href="https://instagram.com/it.tanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="it.tanzil" height="60" width="80" /></a>
-<a href="https://facebook.com/lazyTanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="lazyTanzil" height="60" width="80" /></a>
-</p>
+<h3>☕&emsp;Connect with me! </h3>
 
+[![Facebook Badge](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/lazyTanzil)
+[![Facebook Badge](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/it.tanzil)
+[![Mail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tanzil@gmail.com)
+[![BuyMeACoffee Badge](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/realDarkCode)
+
+<!-- Languages -->
+<h3>Languages I Code in</h3>
+
+[![JavaScript Language Badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](#)
+[![C Language Badge](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)](#)
+[![Python Language Badge](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](#)
+
+<!-- Wakatime Stats -->
 <br>
+<h2> ⌨️ Wakatime Stats </h2>
   <!-- wakatime Stats -->
-  <img align="center" src="https://github-readme-stats.vercel.app/api/wakatime?username=realDarkCode&theme=algolia&layout=compact&langs_count=10&custom_title=DarkCode's%20Coding%20Time" alt="DarkCodes's wakatime stats"  title="DarkCode's wakatime stats"/>
+  <img align="center" src="https://github-readme-stats.vercel.app/api/wakatime?username=realDarkCode&theme=algolia&layout=compact&langs_count=10&custom_title=DarkCode's%20Coding%20Time" alt="DarkCodes's wakatime stats"  title="Time Spend on Coding"/>
 
 <!-- Github Stats -->
 <br/>
-
 <summary><h2 align="center"> 📊 Github Stats </h2> </summary>
   <br/>
   <summary><b>💻 GitHub Profile Stats</b></summary>
