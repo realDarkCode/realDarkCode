@@ -16,27 +16,26 @@
 <h2 align="center"> I'm a  student and self-taught web developer</h3>
 
 <!-- short description -->
-<p>I'm a student & self-taught Web Developer from Bangladesh. I wrote my first line of code when I was in 6th grade and since then, I have started learned so many things still walking the walk. you can  checkout my website for more details: https://realdarkcode.github.io</p>
+<p>I'm a student & self-taught Web Developer from Bangladesh. I wrote my first line of code when I was in 6th grade and since then, I have started learned so many things still walking the walk.
 
 <!-- Contacts -->
-<h4>☕&emsp;Connect with me! </h4>
+
+☕&emsp;Connect with me!
 
 [![Facebook Badge](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/lazyTanzil)
 [![Facebook Badge](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/it.tanzil)
 [![Mail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tanzil@gmail.com)
+[![Website Badge](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://realdarkcode.github.io)
 [![BuyMeACoffee Badge](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/realDarkCode)
 
-<!-- Languages -->
-<h4>Languages I Code in</h4>
+<!-- Tools and tech -->
+
+<h4>Things I code with </h4>
 
 [![JavaScript Language Badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E&labelColor=black)](#)
 [![Typescript Badge](https://img.shields.io/badge/-Typescript-007acc?style=for-the-badge&labelColor=black&logo=typescript&logoColor=007acc)](#)
 [![C Language Badge](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white&)](#)
 [![Python Language Badge](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue&labelColor=black)](#)
-
-<!-- Stack -->
-<h4>Technology and Tools I write code with</h4>
-
 [![Nodejs Badge](https://img.shields.io/badge/-Nodejs-3C873A?style=for-the-badge&labelColor=black&logo=node.js&logoColor=3C873A)](#)
 [![Express.js Badge](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](#)
 [![MongoDB Badge](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](#)
