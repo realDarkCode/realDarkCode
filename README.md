@@ -1,14 +1,17 @@
 <!-- Top Title  -->
+
 <h1 align="center">Hello World.
   <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" 
-       width="30px">
+       width="20px">
  </h1>
-
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=realDarkcode&label=Profile%20views&color=blue&style=for-the-badge" alt="realDarkCode" /> 
+<a href="https://wakatime.com/@94bc9a44-242d-4e17-85c7-077adc2edb4a"><img src="https://wakatime.com/badge/user/94bc9a44-242d-4e17-85c7-077adc2edb4a.svg?style=for-the-badge" alt="Total time coded since Apr 25 2022" /></a>
+</p>
 <!-- Cover Image -->
 <p align="center" >
 <img align="center" src="https://user-images.githubusercontent.com/55005374/95673501-37764680-0b66-11eb-8ee1-d4f4a2b285d9.gif" />
 </p>
-
 
 <!-- Intro  -->
 <h1 align="center"> <a href="https://realdarkcode.github.io"> DarkCode</a> </h1>
