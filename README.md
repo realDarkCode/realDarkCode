@@ -33,18 +33,17 @@
 
 <!-- Github Stats -->
 <br/>
-<h2> 📊 Github Stats </h2>
+
+<summary><h2 align="center"> 📊 Github Stats </h2> </summary>
   <br/>
   <summary><b>📅 Recent Streak</b></summary>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=realDarkCode&theme=algolia" alt="realDarkCode" />
-  <br/>
-  <summary><b>⚡ Recent GitHub Activity</b></summary>
   <img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=realDarkCode&theme=algolia&layout=compact&langs_count=8&custom_title=My Favorite Languages" alt="Top Langs"  title="DarkCode's Top Langs"/>
   <br/>
 
   <summary><b>💻 GitHub Profile Stats</b></summary>
-  <img  src="https://github-readme-stats.vercel.app/api?username=realdarkcode&hide=stars&count_private=true&theme=algolia&border_radius=10&custom_title=This Month stats" alt="DarkCode's stats" title="DarkCode's stats"/>
+  <img  src="https://github-readme-stats.vercel.app/api?username=realdarkcode&hide=stars&count_private=true&theme=algolia&border_radius=10&custom_title=DarkCode's%20Profile" alt="DarkCode's stats" title="DarkCode's stats"/>
 <br/>
 <summary><b>📈  Github Contribution Graph</b></summary>
-  <img alt="adityackr's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=realDarkCode&custom_title=DarkCode's%20Contribution%20Graph&theme=react-dark" />
+  <img alt="DarkCode's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=realDarkCode&custom_title=DarkCode's%20Contribution%20Graph&theme=react-dark" />
 <br/>
