@@ -29,30 +29,22 @@
 
 <br>
   <!-- wakatime Stats -->
-  <img align="center" src="https://github-readme-stats.vercel.app/api/wakatime?username=realDarkCode&theme=algolia&layout=compact&langs_count=10&custom_title=DarkCode's Coding Time" alt="DarkCodes's wakatime stats"  title="DarkCode's wakatime stats"/>
+  <img align="center" src="https://github-readme-stats.vercel.app/api/wakatime?username=realDarkCode&theme=algolia&layout=compact&langs_count=10&custom_title=DarkCode's%20Coding%20Time" alt="DarkCodes's wakatime stats"  title="DarkCode's wakatime stats"/>
 
 <!-- Github Stats -->
 <br/>
 <h2> 📊 Github Stats </h2>
   <br/>
   <summary><b>📅 Recent Streak</b></summary>
-
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=realDarkCode&theme=algolia&custom_title=DarkCode's Coding Time" alt="realDarkCode" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=realDarkCode&theme=algolia" alt="realDarkCode" />
   <br/>
-  &nbsp;
   <summary><b>⚡ Recent GitHub Activity</b></summary>
-  <br/>
   <img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=realDarkCode&theme=algolia&layout=compact&langs_count=8&custom_title=My Favorite Languages" alt="Top Langs"  title="DarkCode's Top Langs"/>
   <br/>
-  &nbsp;
 
   <summary><b>💻 GitHub Profile Stats</b></summary>
-  <br/>
   <img  src="https://github-readme-stats.vercel.app/api?username=realdarkcode&hide=stars&count_private=true&theme=algolia&border_radius=10&custom_title=This Month stats" alt="DarkCode's stats" title="DarkCode's stats"/>
 <br/>
-&nbsp;
 <summary><b>📈  Github Contribution Graph</b></summary>
-<br/>
   <img alt="adityackr's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=realDarkCode&custom_title=DarkCode's%20Contribution%20Graph&theme=react-dark" />
 <br/>
-&nbsp;
