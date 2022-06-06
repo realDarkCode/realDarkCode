@@ -1,8 +1,6 @@
 <!-- Top Title  -->
 
 <h1 align="center">Hello World.
-  <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" 
-       width="20px">
  </h1>
 <p align="center">
 <img src="https://komarev.com/ghpvc/?username=realDarkcode&label=Profile%20views&color=blue&style=for-the-badge" alt="realDarkCode" /> 
@@ -36,14 +34,15 @@
 
 <summary><h2 align="center"> 📊 Github Stats </h2> </summary>
   <br/>
-  <summary><b>📅 Recent Streak</b></summary>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=realDarkCode&theme=algolia" alt="realDarkCode" />
-  <img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=realDarkCode&theme=algolia&layout=compact&langs_count=8&custom_title=My Favorite Languages" alt="Top Langs"  title="DarkCode's Top Langs"/>
-  <br/>
-
   <summary><b>💻 GitHub Profile Stats</b></summary>
   <img  src="https://github-readme-stats.vercel.app/api?username=realdarkcode&hide=stars&count_private=true&theme=algolia&border_radius=10&custom_title=DarkCode's%20Profile" alt="DarkCode's stats" title="DarkCode's stats"/>
 <br/>
+  <summary><b>📅 Recent Streak</b></summary>
+<p float="left">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=realDarkCode&theme=algolia" alt="realDarkCode" />
+  <img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=realDarkCode&theme=algolia&layout=compact&langs_count=8&custom_title=My Favorite Languages" alt="Top Langs"  title="DarkCode's Top Langs"/>
+</p>
+  <br/>
 <summary><b>📈  Github Contribution Graph</b></summary>
   <img alt="DarkCode's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=realDarkCode&custom_title=DarkCode's%20Contribution%20Graph&theme=react-dark" />
 <br/>
