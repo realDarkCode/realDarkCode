@@ -19,7 +19,7 @@
 <p>I'm a student & self-taught Web Developer from Bangladesh. I wrote my first line of code when I was in 6th grade and since then, I have started learned so many things still walking the walk. you can  checkout my website for more details: https://realdarkcode.github.io</p>
 
 <!-- Contacts -->
-<h3>☕&emsp;Connect with me! </h3>
+<h4>☕&emsp;Connect with me! </h4>
 
 [![Facebook Badge](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/lazyTanzil)
 [![Facebook Badge](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/it.tanzil)
@@ -27,16 +27,30 @@
 [![BuyMeACoffee Badge](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/realDarkCode)
 
 <!-- Languages -->
-<h3>Languages I Code in</h3>
+<h4>Languages I Code in</h4>
 
-[![JavaScript Language Badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](#)
-[![C Language Badge](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)](#)
-[![Python Language Badge](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](#)
+[![JavaScript Language Badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E&labelColor=black)](#)
+[![Typescript Badge](https://img.shields.io/badge/-Typescript-007acc?style=for-the-badge&labelColor=black&logo=typescript&logoColor=007acc)](#)
+[![C Language Badge](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white&)](#)
+[![Python Language Badge](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue&labelColor=black)](#)
+
+<!-- Stack -->
+<h4>Technology and Tools I write code with</h4>
+
+[![Nodejs Badge](https://img.shields.io/badge/-Nodejs-3C873A?style=for-the-badge&labelColor=black&logo=node.js&logoColor=3C873A)](#)
+[![Express.js Badge](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](#)
+[![MongoDB Badge](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](#)
+[![React Badge](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)](#)
+[![Next.js Badge](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](#)
+[![Git Badge](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)](#)
+[![Linux Badge](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](#)
+[![VScode Badge](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](#)
+[![TailwindCSS Badge](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](#)
+[![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](#)
 
 <!-- Wakatime Stats -->
 <br>
 <h2> ⌨️ Wakatime Stats </h2>
-  <!-- wakatime Stats -->
   <img align="center" src="https://github-readme-stats.vercel.app/api/wakatime?username=realDarkCode&theme=algolia&layout=compact&langs_count=10&custom_title=DarkCode's%20Coding%20Time" alt="DarkCodes's wakatime stats"  title="Time Spend on Coding"/>
 
 <!-- Github Stats -->
