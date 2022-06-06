@@ -19,26 +19,15 @@
 
 <!-- short description -->
 <p>I'm a student & self-taught Web Developer from Bangladesh. I wrote my first line of code when I was in 6th grade and since then, I have started learned so many things still walking the walk. you can  checkout my website for more details: https://realdarkcode.github.io</p>
-<!-- List items  -->
-- 🔭 I’m currently working on [My custom discord bot](https://github.com/realDarkCode/discord-bot)
 
-- 🌱 I’m currently learning **Data Structure and algorithm**
-
-- 🎉 I’m excited to finish [personal portfolio](https://github.com/realDarkCode/realDarkcode.github.io)
-
-- 👨‍💻 All of my projects are available at my github
-
-- 💬 Ask me about **Javascript**
-
-- 📫 Email me at **tanzil.ncpsc@gmail.com**
-    <!-- Contacts -->
-    <h2 align="left">Connect with me:</h2>
-    <p align="left">
-    <a href="https://instagram.com/it.tanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="it.tanzil" height="60" width="80" /></a>
-    <a href="https://facebook.com/lazyTanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="lazyTanzil" height="60" width="80" /></a>
-    </p>
-  <details>
-   <summary><h2>Github Stats</h2></summary>
+<!-- Contacts -->
+<h2 align="left">Connect with me:</h2>
+<p align="left">
+<a href="https://instagram.com/it.tanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="it.tanzil" height="60" width="80" /></a>
+<a href="https://facebook.com/lazyTanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="lazyTanzil" height="60" width="80" /></a>
+</p>
+<details>
+  <summary><h2>Github Stats</h2></summary>
 
  <img width="50%" src="https://github-readme-streak-stats.herokuapp.com/?user=realDarkCode&theme=algolia" alt="realDarkCode" />
   
