@@ -12,7 +12,6 @@
 </p>
 
 <!-- Intro  -->
-<h1 align="center"> <a href="https://realdarkcode.github.io"> DarkCode</a> </h1>
 <h2 align="center"> I'm a  student and self-taught web developer</h3>
 
 <!-- short description -->
@@ -46,6 +45,11 @@
 [![VScode Badge](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](#)
 [![TailwindCSS Badge](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](#)
 [![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](#)
+
+<!-- Business Email -->
+<h4> Business </h4>
+
+📧&emsp;[tanzil.ncpsc@gmail.com](mailto:tanzil.ncpsc@gmail.com)
 
 <!-- Wakatime Stats -->
 <br>
