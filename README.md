@@ -49,14 +49,14 @@
 <!-- Wakatime Stats -->
 <h2> ⌨️ Wakatime Stats </h2>
 <div>
-  <img align="left" width="325px" src="https://github-readme-stats.vercel.app/api/wakatime?username=realDarkCode&theme=algolia&layout=compact&langs_count=10&custom_title=DarkCode's%20Coding%20Time" alt="DarkCodes's wakatime stats"  title="Time Spend on Coding"/>
-  <img align="left" width="325px" src="https://github-readme-stats.vercel.app/api?username=realdarkcode&hide=stars&count_private=true&theme=algolia&border_radius=10&custom_title=DarkCode's%20Profile" alt="DarkCode's stats" title="DarkCode's stats"/>
+  <img align="left" width="50%" src="https://github-readme-stats.vercel.app/api/wakatime?username=realDarkCode&theme=algolia&layout=compact&langs_count=10&custom_title=DarkCode's%20Coding%20Time" alt="DarkCodes's wakatime stats"  title="Time Spend on Coding"/>
+  <img width="50%" src="https://github-readme-stats.vercel.app/api?username=realdarkcode&hide=stars&count_private=true&theme=algolia&border_radius=10&custom_title=DarkCode's%20Profile" alt="DarkCode's stats" title="DarkCode's stats"/>
 </div>
 <hr>
 <!-- Github Stats -->
 <br/>
 <details>
-<summary><h2 align="center"> 📊 Github Stats </h2> </summary>
+<summary> 📊 Github Stats</summary>
   <br/>
 
 <br/>
