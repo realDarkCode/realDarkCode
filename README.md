@@ -44,17 +44,21 @@
 
 📧&emsp;[tanzil.ncpsc@gmail.com](mailto:tanzil.ncpsc@gmail.com)
 
-<!-- Wakatime Stats -->
 <br>
+<!-- Statistics -->
+<!-- Wakatime Stats -->
 <h2> ⌨️ Wakatime Stats </h2>
-  <img align="center" src="https://github-readme-stats.vercel.app/api/wakatime?username=realDarkCode&theme=algolia&layout=compact&langs_count=10&custom_title=DarkCode's%20Coding%20Time" alt="DarkCodes's wakatime stats"  title="Time Spend on Coding"/>
-
+<div>
+  <img align="left" width="325px" src="https://github-readme-stats.vercel.app/api/wakatime?username=realDarkCode&theme=algolia&layout=compact&langs_count=10&custom_title=DarkCode's%20Coding%20Time" alt="DarkCodes's wakatime stats"  title="Time Spend on Coding"/>
+  <img align="left" width="325px" src="https://github-readme-stats.vercel.app/api?username=realdarkcode&hide=stars&count_private=true&theme=algolia&border_radius=10&custom_title=DarkCode's%20Profile" alt="DarkCode's stats" title="DarkCode's stats"/>
+</div>
+<hr>
 <!-- Github Stats -->
 <br/>
+<details>
 <summary><h2 align="center"> 📊 Github Stats </h2> </summary>
   <br/>
-  <summary><b>💻 GitHub Profile Stats</b></summary>
-  <img  src="https://github-readme-stats.vercel.app/api?username=realdarkcode&hide=stars&count_private=true&theme=algolia&border_radius=10&custom_title=DarkCode's%20Profile" alt="DarkCode's stats" title="DarkCode's stats"/>
+
 <br/>
   <summary><b>📅 Recent Streak</b></summary>
 <p float="left">
@@ -65,3 +69,4 @@
 <summary><b>📈  Github Contribution Graph</b></summary>
   <img alt="DarkCode's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=realDarkCode&custom_title=DarkCode's%20Contribution%20Graph&theme=react-dark" />
 <br/>
+</details>
