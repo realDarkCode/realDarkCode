@@ -47,10 +47,13 @@
 <br>
 <!-- Statistics -->
 <h2> ⌨️ Wakatime Stats </h2>
-<div>
+<!-- <div>
   <img float="left" width="50%" src="https://github-readme-stats.vercel.app/api/wakatime?username=realDarkCode&theme=algolia&layout=compact&langs_count=10&custom_title=DarkCode's%20Coding%20Time" alt="DarkCodes's wakatime stats"  title="Time Spend on Coding"/>
   <img float="right" width="50%" src="https://github-readme-stats.vercel.app/api?username=realdarkcode&hide=stars&count_private=true&theme=algolia&border_radius=10&custom_title=DarkCode's%20Profile" alt="DarkCode's stats" title="DarkCode's stats"/>
-</div>
+</div> -->
+
+<img src="https://github-readme-stats.vercel.app/api/wakatime?username=realDarkCode&theme=algolia&layout=compact&langs_count=10&custom_title=DarkCode's%20Coding%20Time" width="425"/> <img src="https://github-readme-stats.vercel.app/api?username=realdarkcode&hide=stars&count_private=true&theme=algolia&border_radius=10&custom_title=DarkCode's%20Profile" alt="DarkCode's stats" width="425"/>
+
 <hr>
 <!-- Github Stats -->
 <br/>
