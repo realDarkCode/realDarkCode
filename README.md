@@ -57,7 +57,7 @@
 <hr>
 <!-- Github Stats -->
 <br/>
-<details>
+<details open>
 <summary> 📊 Github Stats</summary>
   <br/>
 
