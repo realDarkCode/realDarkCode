@@ -39,10 +39,6 @@
 | :globe_with_meridians: Deployment | [![Heroku Badge](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)](#)[![Netlify Badge](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](#)[![Vercel Badge](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](#)                                                                                                                                                                                                            |
 | :computer: Tools                  | [![Git Badge](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)](#)[![Github Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](#)                                                                                                                                                                                                                                                                                                                                        |
 
-<!-- Business Email -->
-<h4> Business </h4>
-
-📧&emsp;[tanzil.ncpsc@gmail.com](mailto:tanzil.ncpsc@gmail.com)
 
 <br>
 
