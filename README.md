@@ -60,7 +60,7 @@ My focus is on building tools that provide real, tangible value. From developing
 ### 📈 Coding Activity & GitHub Stats
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=realDarkCode&theme=algolia&hide_border=true" alt="GitHub Streak Stats" width="100%" />
+  <img src="https://streak-stats.demolab.com/?user=realDarkCode&theme=algolia&hide_border=true" alt="GitHub Streak Stats" width="99%" />
 </p>
 
 <p align="center">
