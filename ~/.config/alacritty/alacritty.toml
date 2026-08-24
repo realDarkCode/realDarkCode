@@ -1,0 +1,17 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/gotham.toml"
+]
+
+[window]
+opacity = 0.9
+blur = true
+
+[font]
+normal = { family = "FiraCode Nerd Font" }
+
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"

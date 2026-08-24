@@ -1,0 +1,710 @@
+#!/usr/bin/env python3
+
+"""
+Git Contribution Report
+=======================
+
+Analyze Git history and current code ownership to generate a contributor
+report for web projects.
+
+By default:
+    - Contributors are sorted by Total Changes (highest first).
+    - Percentage Share is calculated from Total Changes.
+    - Current code ownership is calculated against HEAD.
+    - Uncommitted working-tree changes are not included.
+
+Usage:
+    git-contrib
+    git-contrib generate-md
+
+Sort contributors:
+    git-contrib --sort total
+    git-contrib --sort commits
+    git-contrib --sort added
+    git-contrib --sort deleted
+    git-contrib --sort net
+    git-contrib --sort current
+    git-contrib --sort percent
+
+Percentage calculation:
+    git-contrib --percentage total
+    git-contrib --percentage added
+    git-contrib --percentage deleted
+
+Combine options:
+    git-contrib --sort commits --percentage total
+    git-contrib generate-md --sort total --percentage total
+
+Arguments:
+    generate-md
+        Generate the report as Markdown instead of printing it to the
+        terminal. The file is saved as:
+        git-contribution-report.md
+
+    --sort
+        Sort contributors by:
+            total      Total Changes (default)
+            commits    Number of Commits
+            added      Lines Added
+            deleted    Lines Deleted
+            net        Net Changes
+            current    Current Lines
+            percent    Percentage Share
+
+    --percentage
+        Determine how Percentage Share is calculated:
+            total      Total Changes / Repository Total Changes (default)
+            added      Lines Added / Repository Lines Added
+            deleted    Lines Deleted / Repository Lines Deleted
+
+Examples:
+    # Default report
+    git-contrib
+
+    # Sort by number of commits
+    git-contrib --sort commits
+
+    # Sort by current code ownership
+    git-contrib --sort current
+
+    # Generate Markdown
+    git-contrib generate-md
+
+    # Generate Markdown sorted by commits
+    git-contrib generate-md --sort commits
+
+    # Use added lines for percentage calculation
+    git-contrib --percentage added
+"""
+
+
+import argparse
+import subprocess
+from collections import defaultdict
+from datetime import datetime, timezone
+from pathlib import Path
+
+
+# ============================================================
+# Configuration
+# ============================================================
+
+ALLOWED_EXTENSIONS = {
+    # JavaScript / TypeScript
+    ".js",
+    ".jsx",
+    ".mjs",
+    ".cjs",
+    ".ts",
+    ".tsx",
+
+    # HTML
+    ".html",
+    ".htm",
+
+    # CSS
+    ".css",
+    ".scss",
+    ".sass",
+    ".less",
+
+    # Configuration / data
+    ".json",
+    ".jsonc",
+    ".yaml",
+    ".yml",
+
+    # Documentation
+    ".md",
+    ".mdx",
+
+    # GraphQL
+    ".graphql",
+    ".gql",
+
+    # Other frontend frameworks
+    ".vue",
+    ".svelte",
+}
+
+ALLOWED_FILENAMES = {
+    "Dockerfile",
+    "Makefile",
+    ".gitignore",
+    ".dockerignore",
+    ".editorconfig",
+    ".prettierrc",
+    ".eslintrc",
+    "docker-compose.yml",
+    "docker-compose.yaml",
+}
+
+EXCLUDED_DIRS = {
+    ".git",
+    "node_modules",
+    "dist",
+    "build",
+    "out",
+    ".next",
+    "coverage",
+    ".cache",
+    ".parcel-cache",
+    ".turbo",
+    ".vite",
+    ".expo",
+    "storybook-static",
+}
+
+EXCLUDED_FILES = {
+    "package-lock.json",
+    "yarn.lock",
+    "pnpm-lock.yaml",
+    "bun.lockb",
+}
+
+
+# ============================================================
+# Sorting and percentage options
+# ============================================================
+
+SORT_FIELDS = {
+    "total": "Total Changes",
+    "commits": "Commits",
+    "added": "Added",
+    "deleted": "Deleted",
+    "net": "Net Changes",
+    "current": "Current Lines",
+    "percent": "% Share",
+}
+
+PERCENTAGE_FIELDS = {
+    "total": "Total Changes",
+    "added": "Added",
+    "deleted": "Deleted",
+}
+
+
+# ============================================================
+# Git helpers
+# ============================================================
+
+def run_git(args):
+    result = subprocess.run(
+        ["git", *args],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+    )
+
+    if result.returncode != 0:
+        raise RuntimeError(result.stderr.strip())
+
+    return result.stdout
+
+
+def is_git_repository():
+    try:
+        return (
+            run_git(
+                ["rev-parse", "--is-inside-work-tree"]
+            ).strip()
+            == "true"
+        )
+    except RuntimeError:
+        return False
+
+
+# ============================================================
+# File filtering
+# ============================================================
+
+def is_allowed_file(path):
+    path = Path(path)
+
+    if any(part in EXCLUDED_DIRS for part in path.parts):
+        return False
+
+    if path.name in EXCLUDED_FILES:
+        return False
+
+    if path.name in ALLOWED_FILENAMES:
+        return True
+
+    return path.suffix.lower() in ALLOWED_EXTENSIONS
+
+
+# ============================================================
+# Relative time
+# ============================================================
+
+def relative_time(date_string):
+    if not date_string:
+        return "N/A"
+
+    try:
+        commit_time = datetime.fromisoformat(
+            date_string.replace("Z", "+00:00")
+        )
+
+        now = datetime.now(timezone.utc)
+
+        seconds = max(
+            0,
+            int((now - commit_time).total_seconds()),
+        )
+
+        if seconds < 60:
+            return "just now"
+
+        minutes = seconds // 60
+
+        if minutes < 60:
+            return f"{minutes}m ago"
+
+        hours = minutes // 60
+
+        if hours < 24:
+            return f"{hours}h ago"
+
+        days = hours // 24
+
+        if days < 30:
+            return f"{days}d ago"
+
+        months = days // 30
+
+        if months < 12:
+            return f"{months}mo ago"
+
+        years = days // 365
+
+        return f"{years}y ago"
+
+    except ValueError:
+        return date_string
+
+
+# ============================================================
+# Git history
+# ============================================================
+
+def calculate_history():
+    print("Analyzing Git history...")
+
+    log = run_git([
+        "log",
+        "--all",
+        "--numstat",
+        "--format=COMMIT|%aN|%aI|%H",
+    ])
+
+    stats = defaultdict(
+        lambda: {
+            "added": 0,
+            "deleted": 0,
+            "commits": 0,
+            "last_commit": None,
+        }
+    )
+
+    current_author = None
+
+    for line in log.splitlines():
+        if line.startswith("COMMIT|"):
+            parts = line.split("|", 3)
+
+            if len(parts) < 4:
+                continue
+
+            current_author = parts[1].strip()
+            commit_date = parts[2].strip()
+
+            stats[current_author]["commits"] += 1
+
+            if stats[current_author]["last_commit"] is None:
+                stats[current_author]["last_commit"] = commit_date
+
+            continue
+
+        if not current_author:
+            continue
+
+        parts = line.split("\t")
+
+        if len(parts) != 3:
+            continue
+
+        added, deleted, filename = parts
+
+        # Binary files
+        if not added.isdigit() or not deleted.isdigit():
+            continue
+
+        if not is_allowed_file(filename):
+            continue
+
+        stats[current_author]["added"] += int(added)
+        stats[current_author]["deleted"] += int(deleted)
+
+    return stats
+
+
+# ============================================================
+# Current ownership
+# ============================================================
+
+def calculate_current_ownership():
+    print("Analyzing current code ownership...")
+
+    ownership = defaultdict(int)
+
+    # Only tracked files from the current committed tree.
+    files = run_git(["ls-files"]).splitlines()
+
+    files = [
+        file.strip()
+        for file in files
+        if file.strip() and is_allowed_file(file)
+    ]
+
+    for index, filename in enumerate(files, 1):
+        print(
+            f"\rAnalyzing files: {index}/{len(files)}",
+            end="",
+            flush=True,
+        )
+
+        try:
+            # IMPORTANT:
+            # Blame HEAD, not the working tree.
+            #
+            # This prevents:
+            # "Not Committed Yet"
+            #
+            # from appearing when the developer has
+            # uncommitted changes.
+            blame = run_git([
+                "blame",
+                "HEAD",
+                "--line-porcelain",
+                "-M",
+                "-C",
+                "--",
+                filename,
+            ])
+
+        except RuntimeError:
+            continue
+
+        author = None
+
+        for line in blame.splitlines():
+            if line.startswith("author "):
+                author = line[7:].strip()
+
+            elif line.startswith("\t") and author:
+                ownership[author] += 1
+                author = None
+
+    print()
+
+    return ownership
+
+
+# ============================================================
+# Build report
+# ============================================================
+
+def build_report(
+    history,
+    ownership,
+    sort_by="total",
+    percentage_by="total",
+):
+    developers = set(history) | set(ownership)
+
+    total_added = sum(
+        history[name]["added"]
+        for name in developers
+    )
+
+    total_deleted = sum(
+        history[name]["deleted"]
+        for name in developers
+    )
+
+    total_changes = total_added + total_deleted
+
+    rows = []
+
+    for name in developers:
+        added = history[name]["added"]
+        deleted = history[name]["deleted"]
+        total = added + deleted
+        net = added - deleted
+
+        if percentage_by == "total":
+            percentage_value = total
+            percentage_total = total_changes
+
+        elif percentage_by == "added":
+            percentage_value = added
+            percentage_total = total_added
+
+        elif percentage_by == "deleted":
+            percentage_value = deleted
+            percentage_total = total_deleted
+
+        else:
+            percentage_value = total
+            percentage_total = total_changes
+
+        percentage = (
+            (percentage_value / percentage_total) * 100
+            if percentage_total
+            else 0
+        )
+
+        rows.append({
+            "Developer": name,
+            "Commits": history[name]["commits"],
+            "Last Commit": relative_time(
+                history[name]["last_commit"]
+            ),
+            "Added": added,
+            "Deleted": deleted,
+            "Total Changes": total,
+            "Net Changes": net,
+            "Current Lines": ownership[name],
+            "% Share": percentage,
+        })
+
+    sort_key = SORT_FIELDS[sort_by]
+
+    rows.sort(
+        key=lambda row: row[sort_key],
+        reverse=True,
+    )
+
+    return rows
+
+
+# ============================================================
+# Terminal output
+# ============================================================
+
+def print_report(rows):
+    print()
+
+    print("=" * 124)
+
+    print(
+        "                         GIT CONTRIBUTION REPORT"
+    )
+
+    print("=" * 124)
+
+    print()
+
+    print(
+        f"{'Developer':<22}"
+        f"{'Commits':>9}"
+        f"{'Last Commit':>14}"
+        f"{'Added':>11}"
+        f"{'Deleted':>11}"
+        f"{'Total Changes':>15}"
+        f"{'Net Changes':>13}"
+        f"{'Current Lines':>14}"
+        f"{'% Share':>10}"
+    )
+
+    print("-" * 124)
+
+    for row in rows:
+        print(
+            f"{row['Developer']:<22}"
+            f"{row['Commits']:>9,}"
+            f"{row['Last Commit']:>14}"
+            f"{row['Added']:>11,}"
+            f"{row['Deleted']:>11,}"
+            f"{row['Total Changes']:>15,}"
+            f"{row['Net Changes']:>13,}"
+            f"{row['Current Lines']:>14,}"
+            f"{row['% Share']:>9.2f}%"
+        )
+
+    print("-" * 124)
+
+    print(
+        f"{'TOTAL':<22}"
+        f"{sum(r['Commits'] for r in rows):>9,}"
+        f"{'':>14}"
+        f"{sum(r['Added'] for r in rows):>11,}"
+        f"{sum(r['Deleted'] for r in rows):>11,}"
+        f"{sum(r['Total Changes'] for r in rows):>15,}"
+        f"{sum(r['Net Changes'] for r in rows):>13,}"
+        f"{sum(r['Current Lines'] for r in rows):>14,}"
+        f"{'100.00':>9}%"
+    )
+
+    print()
+
+
+# ============================================================
+# Markdown output
+# ============================================================
+
+def generate_markdown(rows):
+    lines = []
+
+    lines.append("# Git Contribution Report")
+    lines.append("")
+
+    lines.append(
+        "Contribution statistics for the current Git repository."
+    )
+
+    lines.append("")
+
+    lines.append(
+        "> Only tracked project files are included. "
+        "Dependencies, build output, lock files, and generated "
+        "directories are excluded."
+    )
+
+    lines.append("")
+
+    lines.append(
+        "Current code ownership is calculated against `HEAD`, "
+        "so uncommitted working-tree changes are not included."
+    )
+
+    lines.append("")
+
+    lines.append(
+        "| Developer | Commits | Last Commit | Added | Deleted | "
+        "Total Changes | Net Changes | Current Lines | % Share |"
+    )
+
+    lines.append(
+        "|---|---:|---:|---:|---:|---:|---:|---:|---:|"
+    )
+
+    for row in rows:
+        lines.append(
+            f"| {row['Developer']} "
+            f"| {row['Commits']:,} "
+            f"| {row['Last Commit']} "
+            f"| {row['Added']:,} "
+            f"| {row['Deleted']:,} "
+            f"| {row['Total Changes']:,} "
+            f"| {row['Net Changes']:,} "
+            f"| {row['Current Lines']:,} "
+            f"| {row['% Share']:.2f}% |"
+        )
+
+    lines.append("")
+
+    return "\n".join(lines)
+
+
+def save_markdown(rows):
+    output = Path("git-contribution-report.md")
+
+    output.write_text(
+        generate_markdown(rows),
+        encoding="utf-8",
+    )
+
+    print(f"Markdown report generated: {output}")
+
+
+# ============================================================
+# CLI
+# ============================================================
+
+def main():
+    parser = argparse.ArgumentParser(
+        description=(
+            "Analyze Git history and current code ownership "
+            "to generate a contributor report for web projects."
+        ),
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=(
+            "Examples:\n"
+            "  git-contrib\n"
+            "  git-contrib generate-md\n"
+            "  git-contrib --sort commits\n"
+            "  git-contrib --sort current\n"
+            "  git-contrib --percentage added\n"
+            "  git-contrib generate-md --sort commits\n"
+            "  git-contrib generate-md --sort total "
+            "--percentage total\n"
+        ),
+    )
+
+    parser.add_argument(
+        "command",
+        nargs="?",
+        choices=["generate-md"],
+        help="Generate the report as Markdown.",
+    )
+
+    parser.add_argument(
+        "--sort",
+        choices=list(SORT_FIELDS),
+        default="total",
+        help=(
+            "Sort contributors by: "
+            "total, commits, added, deleted, net, current, "
+            "or percent (default: total)."
+        ),
+    )
+
+    parser.add_argument(
+        "--percentage",
+        choices=list(PERCENTAGE_FIELDS),
+        default="total",
+        help=(
+            "Calculate percentage share from: "
+            "total changes, added lines, or deleted lines "
+            "(default: total)."
+        ),
+    )
+
+    args = parser.parse_args()
+
+    if not is_git_repository():
+        print(
+            "Error: this directory is not a Git repository."
+        )
+        return 1
+
+    try:
+        history = calculate_history()
+
+        ownership = calculate_current_ownership()
+
+        rows = build_report(
+            history,
+            ownership,
+            sort_by=args.sort,
+            percentage_by=args.percentage,
+        )
+
+        if args.command == "generate-md":
+            save_markdown(rows)
+        else:
+            print_report(rows)
+
+    except RuntimeError as error:
+        print(f"\nError: {error}")
+        return 1
+
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

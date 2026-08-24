@@ -1,83 +1,72 @@
-<!-- Top Title  -->
-
-<h1 align="center">Hello World.
- </h1>
+<!-- Header Banner & Stats Badges -->
 <p align="center">
-<img src="https://komarev.com/ghpvc/?username=realDarkcode&label=Profile%20views&color=blue&style=for-the-badge" alt="realDarkCode" /> 
-<a href="https://wakatime.com/@94bc9a44-242d-4e17-85c7-077adc2edb4a"><img src="https://wakatime.com/badge/user/94bc9a44-242d-4e17-85c7-077adc2edb4a.svg?style=for-the-badge" alt="Total time coded since Apr 25 2022" /></a>
-</p>
-<!-- Cover Image -->
-<p align="center" >
-<img align="center" src="/assets/images/top-bg.png" />
+  <img align="center" src="/assets/images/top-bg.png" alt="DarkCode Banner" width="100%" />
 </p>
 
-<!-- Intro  -->
-<h2 align="center"> I'm a  student and self-taught web developer</h3>
+<h1 align="center">Hi there, I'm Tanzil Islam (realDarkCode) 👋</h1>
 
-<!-- short description -->
-<p>I'm a student & self-taught Web Developer from Bangladesh. I wrote my first line of code when I was in 6th grade and since then, I have started learned so many things still walking the walk.
-
-<!-- Contacts -->
-
-☕&emsp;Connect with me!
-
-[![Facebook Badge](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/lazyTanzil)
-[![Facebook Badge](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/it.tanzil)
-[![Mail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tanzil.darkcode@gmail.com)
-[![Website Badge](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://realdarkcode.github.io)
-[![BuyMeACoffee Badge](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/realDarkCode)
-
-<!-- Tools and tech -->
-
-<h4>Things I code with </h4>
-
-| Topic                             | Tech and Tool                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| :-------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 👨‍💻 Languages                      | [![JavaScript Language Badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E&labelColor=black)](#)[![TypeScript Language Badge](https://img.shields.io/badge/typescript-3178c8?style=for-the-badge&logo=typescript&logoColor=3178c8&labelColor=black)](#)[![Nodejs Badge](https://img.shields.io/badge/-Nodejs-3C873A?style=for-the-badge&labelColor=black&logo=node.js&logoColor=3C873A)](#) [![C Language Badge](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white&)](#) |
-| :rocket: Frameworks & Library     | [![Express.js Badge](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](#)[![React Badge](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)](#)[![TailwindCSS Badge](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](#)[![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](#)                                            |
-| :zap: Database                    | [![MongoDB Badge](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](#)                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| :globe_with_meridians: Deployment | [![Heroku Badge](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)](#)[![Netlify Badge](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](#)[![Vercel Badge](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](#)                                                                                                                                                                                                            |
-| :computer: Tools                  | [![Git Badge](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)](#)[![Github Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](#)                                                                                                                                                                                                                                                                                                                                        |
-
-
-<br>
-
-<!-- Projects  -->
-<hr>
-<h2>🧑‍💻 Projects</h2>
-
-| Name                                                                  | Description                                                                                                                                                                                                                            | Technologies                |
-| --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
-| [Amar Class](https://github.com/realDarkCode/Amar-class)              | An idea for educational systems prepares them for digitalization. A complete package for teachers and students to handle their study online. to make things student and teacher-friendly and simplify. UI is pretty decent and simple. | React                       |
-| [ProTab](https://github.com/ProCodify/ProTab)                         | ProTab is a browser extension that helps you to stay focused on workflow and increase your productivity levels. This extension is made especially for students and programmers to stay more focused and productive in their workflow.  | HTML,CSS and Vanila JS      |
-| [Routine Genrator](https://github.com/realDarkCode/routine-generator) | A simple routine generator for NCPSC Discipline Team.                                                                                                                                                                                  | Spreadsheet API, Javascript |
-| [darko-bot](https://github.com/realDarkCode/darko-cat)                | A Discord bot to server DarkCode Discord server community                                                                                                                                                                              | discordjs, node.js          |
-
-<hr>
-<!-- Statistics -->
-<h2> ⌨️ Wakatime Stats </h2>
-<!-- <div>
-  <img float="left" width="50%" src="https://github-readme-stats.vercel.app/api/wakatime?username=realDarkCode&theme=algolia&layout=compact&langs_count=10&custom_title=DarkCode's%20Coding%20Time" alt="DarkCodes's wakatime stats"  title="Time Spend on Coding"/>
-  <img float="right" width="50%" src="https://github-readme-stats.vercel.app/api?username=realdarkcode&hide=stars&count_private=true&theme=algolia&border_radius=10&custom_title=DarkCode's%20Profile" alt="DarkCode's stats" title="DarkCode's stats"/>
-</div> -->
-
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=realDarkCode&theme=algolia&layout=compact&langs_count=10&custom_title=DarkCode's%20Coding%20Time" width="400"/> <img src="https://github-readme-stats.vercel.app/api?username=realdarkcode&hide=stars&count_private=true&theme=algolia&border_radius=10&custom_title=DarkCode's%20Profile" alt="DarkCode's stats" width="400"/>
-
-<hr>
-<!-- Github Stats -->
-<br/>
-<details open>
-<summary> 📊 Github Stats</summary>
-  <br/>
-
-<br/>
-  <summary><b>📅 Recent Streak</b></summary>
-<p float="left">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=realDarkCode&theme=algolia" alt="realDarkCode" />
-  <img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=realDarkCode&theme=algolia&layout=compact&langs_count=8&custom_title=My Favorite Languages" alt="Top Langs"  title="DarkCode's Top Langs"/>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=realDarkcode&label=Profile%20Views&color=007ACC&style=for-the-badge" alt="Profile Views" />
+  <a href="https://wakatime.com/@94bc9a44-242d-4e17-85c7-077adc2edb4a">
+    <img src="https://wakatime.com/badge/user/94bc9a44-242d-4e17-85c7-077adc2edb4a.svg?style=for-the-badge" alt="WakaTime Coding Time" />
+  </a>
 </p>
-  <br/>
-<summary><b>📈  Github Contribution Graph</b></summary>
-  <img alt="DarkCode's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=realDarkCode&custom_title=DarkCode's%20Contribution%20Graph&theme=react-dark" />
-<br/>
-</details>
+
+<p align="center">
+  <b>⚡ Full Stack Web Developer | Problem Solver & Automation Enthusiast</b>
+</p>
+
+---
+
+### 👨‍💻 About Me
+
+I am a Full Stack Web Developer with a passion for turning complex problems into elegant, automated solutions. I love the challenge of engineering efficient logic—whether that means architecting a scalable backend, designing seamless APIs, or writing custom automation scripts.
+
+My focus is on building tools that provide real, tangible value. From developing interactive web applications to structuring robust database workflows and building automated bot integrations, I thrive at the intersection of clean code and practical utility.
+
+- 🧩 **Mindset**: Problem-solver first, developer second. I believe in clean architecture and continuous learning.
+- 💡 **What I Do**: Full Stack Web Development, API Design, and building automated workflows (like robust Discord bots and dynamic data integrations).
+- 🔭 **Currently Focused On**: Building comprehensive web platforms, refining database schemas with modern ORMs, and creating scalable developer utilities.
+- 💼 **Connect with me**:
+  [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/it-tanzil/)
+  [![Portfolio Badge](https://img.shields.io/badge/GitHub_Profile-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/realDarkCode)
+
+---
+
+### 🛠️ Tech Stack & Skills
+
+| Category                  | Technologies                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| :------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Languages**             | [![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#) [![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](#) [![Node.js Badge](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](#)                                                                                                                                                                                                                                            |
+| **Frontend & Frameworks** | [![React Badge](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](#) [![Next.js Badge](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](#) [![Express.js Badge](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](#) [![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](#) [![shadcn/ui Badge](https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)](#) |
+| **Database & ORM**        | [![MongoDB Badge](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](#) [![PostgreSQL Badge](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](#) [![Prisma Badge](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](#)                                                                                                                                                                                                                                                          |
+| **Headless CMS**          | [![Sanity Badge](https://img.shields.io/badge/Sanity-F03E2F?style=for-the-badge&logo=sanity&logoColor=white)](#) [![Contentful Badge](https://img.shields.io/badge/Contentful-CF2657?style=for-the-badge&logo=contentful&logoColor=white)](#)                                                                                                                                                                                                                                                                                                                                                                              |
+| **DevOps & Cloud**        | [![Docker Badge](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](#) [![Vercel Badge](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](#) [![Netlify Badge](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](#)                                                                                                                                                                                                                                                                      |
+| **Tools & Environment**   | [![Git Badge](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](#) [![GitHub Badge](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](#) [![VS Code Badge](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](#)                                                                                                                                                                                                                                                                    |
+
+---
+
+### 🚀 Featured Projects
+
+| Project                                                                       | Description                                                                                                                                                                                    | Tech Stack                                       |                           Repository                           |
+| :---------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------- | :------------------------------------------------------------: |
+| 📊 **[Attendance Tracker](https://github.com/ProCodify/attendance-tracker)**  | A full-stack Next.js application designed to automatically scrape, manage, and display college attendance data with interactive statistics, holiday configurations, and credential management. | `Next.js` `TypeScript` `Tailwind` `Web Scraping` |  [View Code](https://github.com/ProCodify/attendance-tracker)  |
+| 🎟️ **[Raffle Draw API](https://github.com/realDarkCode/raffle-draw-api)**     | A RESTful API & lottery ticket management system built with Express. Handles ticket generation, participant tracking, and automated fair winner selection algorithms.                          | `Node.js` `Express.js` `JavaScript` `REST API`   |  [View Code](https://github.com/realDarkCode/raffle-draw-api)  |
+| 📅 **[Routine Generator](https://github.com/realDarkCode/routine-generator)** | Automated routine scheduling tool developed for college discipline teams. Integrates with Spreadsheet APIs to dynamically parse, structure, and present conflict-free class schedules.         | `JavaScript` `Google Sheets API` `HTML/CSS`      | [View Code](https://github.com/realDarkCode/routine-generator) |
+| 🤖 **[DarkBot](https://github.com/realDarkCode/DarkBot)**                     | Feature-rich Discord bot built using `discord.js` for the DarkCode community server. Supports server moderation, slash commands, automated role assignments, and interactive utilities.        | `discord.js` `Node.js` `JavaScript`              |      [View Code](https://github.com/realDarkCode/DarkBot)      |
+
+---
+
+### 📈 Coding Activity & GitHub Stats
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=realDarkCode&theme=algolia&hide_border=true" alt="GitHub Streak Stats" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=realDarkCode&theme=react-dark&hide_border=true" alt="Activity Graph" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://wakatime.com/share/@realDarkCode/6e114b4d-be74-4484-946a-752fe8e76464.svg" alt="WakaTime Stats" width="100%" />
+</p>
