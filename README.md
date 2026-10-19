@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <b>⚡ Full Stack Web Developer | Problem Solver & Automation Enthusiast</b>
+  <b>⚡ Full Stack Web Developer | Programmer & Problem solver</b>
 </p>
 
 ---
@@ -29,7 +29,6 @@ My focus is on building tools that provide real, tangible value. From developing
 - 🔭 **Currently Focused On**: Building comprehensive web platforms, refining database schemas with modern ORMs, and creating scalable developer utilities.
 - 💼 **Connect with me**:
   [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/it-tanzil/)
-  [![Portfolio Badge](https://img.shields.io/badge/GitHub_Profile-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/realDarkCode)
 
 ---
 
@@ -57,16 +56,12 @@ My focus is on building tools that provide real, tangible value. From developing
 
 ---
 
-### 📈 Coding Activity & GitHub Stats
+<div align="center">
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=realDarkCode&theme=algolia&hide_border=true" alt="GitHub Streak Stats" width="99%" />
-</p>
+# 📊 GitHub Stats:
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=realDarkCode&theme=react-dark&hide_border=true" alt="Activity Graph" width="100%" />
-</p>
+![](https://github-readme-stats.shion.dev/api?username=RealDarkCode&theme=nightowl&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://streak-stats.demolab.com/?user=RealDarkCode&theme=nightowl&hide_border=false)<br/>
+![](https://github-readme-stats.shion.dev/api/top-langs/?username=RealDarkCode&theme=nightowl&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
-<p align="center">
-  <img src="https://wakatime.com/share/@realDarkCode/6e114b4d-be74-4484-946a-752fe8e76464.svg" alt="WakaTime Stats" width="100%" />
-</p>
+</div>
